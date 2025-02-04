@@ -1,0 +1,613 @@
+.section1 {
+    height: 100vh;
+    background-image: url(./Images/section\ 1\ bg.avif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+}
+
+.section1-main {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    background-color: #5c5adb;
+    height: 50%;
+    max-width: 660px;
+    width: fit-content;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fadeIn-afterHtml 2s;
+    animation-fill-mode: forwards;
+}
+
+.section1-main div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.section1-main h2 {
+    font-size: 75px;
+    font-family: poppins semibold, sans-serif;
+}
+
+.section1-main h4 {
+    font-size: 40px;
+    max-width: 350px;
+}
+
+.section1-main h2, h4, a {
+    color: #ffffff;
+    text-align: left;
+}
+
+.section1-main a {
+    box-sizing: border-box;
+    background-color: #1d1d36;
+    padding: 10px 20px;
+    align-self: flex-start;
+}
+
+
+
+/* secetion 1 end |\ */
+
+
+
+/* section 2 start || */
+
+.section2 {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+}
+
+.grid-square-main {
+    padding: 0px 70px;
+}
+
+.safety-measures {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    animation: popup 1.5s;
+}
+
+.safety-measures>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.section2-top {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.safety-measures p {
+    max-width: 550px;
+    text-align: center;
+}
+
+.safety-measures h2 {
+    font-size: 60px;
+    text-align: center;
+    font-family: poppins semibold, sans-serif;
+}
+
+.safety-measures a {
+    background-color: #5c5adb;
+    padding: 10px 32px;
+}
+
+
+.grid-square {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-columns: 50%;
+    background-color: #1d1d36;
+    max-width: 90%;
+    margin: auto;
+}
+
+.text1, .text2 {
+    animation: popup 1s;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px
+}
+
+.text1 p, .text2 p {
+    width: 50%;
+}
+
+.text1 a, .text2 a {
+    background-color: #5c5adb;
+    padding: 8px 16px;
+    min-width: fit-content;
+    width: 30%;
+    text-align: center;
+}
+
+.first-photo {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.second-photo {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.first-photo img, .second-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.new-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    top: -150px;
+}
+
+.new-posts>a {
+    background-color: #1d1d36;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+.new-posts h2 {
+    font-size: 60px;
+    font-family: poppins semi-bold, sans-serif;
+    color: #1d1d36;
+    animation: fadeIn-afterHtml 3s;
+}
+
+.posts-main-div {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.new-post {
+    width: 305px;
+    height: 305px;
+    display: block;
+    margin: auto;
+}
+
+.post1 {
+    background-image: url(./Images/post\ 1.webp);
+    background-size: cover;
+}
+
+.post3 {
+    background-image: url(./Images/post\ 2.webp);
+    background-size: cover;
+}
+
+.post2 {
+    background-image: url(./Images/post\ 3.webp);
+    background-size: cover;
+}
+
+.post-details {
+    width: 100%;
+    height: 100%;
+    background-color: #1d1d3667;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.post-details img {
+    width: 20px;
+    height: auto;
+}
+
+.like-icons {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+.like-icons div {
+    display: flex;
+    gap: 5px;
+    color: black;
+}
+
+.post-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90%;
+    padding: 30px 20px 20px 20px;
+}
+
+.post-header h4 {
+    font-size: 24px;
+    font-family: poppins semi-bold, sans-serif;
+}
+
+.post-header p { 
+    font-size: 12px;
+    color: #ffffff;
+    font-family: poppins semi-bold, sans-serif;
+    font-weight: 600;
+}
+
+.purple-bg {
+    background-color: #5c5adb;
+    width: 100vw;
+    max-height: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 0px 40px 0px;
+}
+
+
+.gallery-name {
+    text-align: center;
+    font-family: poppins semi-bold, sans-serif;
+}
+
+.gallery-name h2 {
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.gallery-name p{
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.gallery-name span {
+    color: #1d1d36;
+    font-weight: 600;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 10px;
+    
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery-name h2, .gallery-name p {
+    animation: fade-in 2s;
+}
+
+.sign-up-form {
+    width: 60%;
+    margin: auto;
+    padding: 50px;
+}
+
+.sign-up-name h2 {
+    font-family: poppins semi-bold, sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #1d1d36;
+    text-align: center;
+}
+
+.sign-up-name p {
+    color: #1d1d36;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.sign-up-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sign-up-form-bottom, .sign-up-form-bottom div {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign-up-form-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sign-up-form-top input {
+    padding: 8px 12px;
+    border: 1px solid #5c5adb;
+    background-color: transparent;
+}
+
+.sign-up-form-top input:hover, .sign-up-form-top input:focus {
+    background-color: #5c5adb54;
+}
+
+.sign-up-form-bottom button {
+    padding: 12px 24px;
+    background-color: #1d1d36;
+    border: #1d1d36 1px solid;
+    color: #ffffff;
+}
+
+.sign-up-form-bottom button:hover {
+    background-color: #3d3c92;
+    transition: 0.5s;
+}
+
+
+/* section 2 end |\ */
+
+
+/* section 1 respomsvie start || */
+
+@media screen and (max-width:1025px) {
+    
+    .section1 {
+        justify-content: space-evenly;
+    }
+
+    .section1-main {
+        position: unset;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .section1-main h2 {
+        font-size: 50px;
+    }
+
+    .section1-main h4 {
+        font-size: 30px;
+    }
+
+    .section1-main a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 461px) {
+    .section1-main {
+        width: 100%;
+    }
+
+    .section1-main h2 {
+        font-size: 30px;
+    }
+
+    .section1-main h4 {
+        font-size: 20px;
+    }
+
+    .section1-main a {
+        font-size: 10px;
+    }
+}
+
+/* section 1 responsive end |\ */
+
+/* section 2 responsive start || */
+
+@media screen and (max-width: 426px) {
+    .grid-square {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-auto-rows: 25%;
+        width: fit-content;
+        height: fit-content;
+        gap: 20px;
+    }
+
+    .text1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .first-photo {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .text2 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .second-photo {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    
+}
+
+@media screen and (max-width: 1025px) {
+    .grid-square {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-auto-rows: 25%;
+        width: fit-content;
+        height: fit-content;
+        gap: 20px;
+        max-width: fit-content;
+        max-width: 600px;
+        margin: auto;
+        grid-auto-rows: 30%;
+    }
+
+    .text1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .first-photo {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .text2 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .second-photo {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    .text1 p, .text2 p {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .text1 p, .text2 p {
+        font-size: 12px;
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 426px) {
+    .safety-measures h2 {
+        font-size: 40px;
+    }
+
+    .safety-measures p {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width:321px) {
+    .safety-measures h2{
+        font-size: 30px;
+    }    
+
+    .safety-measures p {
+        font-size: 10px;
+    }
+
+    .safety-measures a {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+}
+
+/* section 2 responsive end |\ */
+
+/* new posts responsive start || */
+
+@media screen and (max-width:769px) {
+    .posts-main-div {
+        max-width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .new-post {
+        width: 250px;
+        height: 250px;
+    }
+
+    .new-posts {
+        top: -20%;
+    }
+
+    .new-posts h2 {
+        font-size: 40px;
+    }
+
+}
+
+/* new posts reposnive end |\ */
+
+/* gallery responsive start || */
+
+@media screen and (max-width:769px) {
+    .gallery-name h2 {
+        font-size: 40px;
+    }
+
+    .gallery-name p {
+        font-size: 16px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* gallery reponsive end |\ */
+
+/* sign-up responsive start || */
+
+@media screen and (max-width:671px) {
+    .sign-up-form-bottom {
+        flex-direction: column;
+    }
+
+    .sign-up-name {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sign-up-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:516px) {
+    .sign-up-form h2 {
+        font-size: 30px;
+    }
+
+    .sign-up-form p {
+        font-size: 16px;
+    }
+
+    .sign-up-form {
+        width: 90%;
+    }
+}
+
+/*  sign-up responsive end |\ */

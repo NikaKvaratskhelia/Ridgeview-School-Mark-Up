@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: poppins-extralight, sans-serif;
+}
+
+html {
+    overflow-x: hidden !important;
+    animation: fade-in 1.5s;
+}
+
+body {
+    overflow-x: hidden !important;
+}
+/* 
+.animated {
+    animation-play-state: paused;
+}
+
+.animated.inview {
+    animation-play-state: running;
+} */
+
+/* Animations start || */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn-afterHtml {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+        position: relative;
+        top:500px;
+    }
+
+    50% {
+        opacity: 0;
+        position: relative;
+        top: 200;
+    }
+
+    100% {
+        opacity: 1;
+        position: relative;
+        top: 0;
+    }
+}
+
+/* Animations end |\ */
+
+
+/* Fonts || */
+
+@font-face {
+    font-family: poppins-extralight;
+    src: url(./Fonts/poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: poppins-semibold;
+    src: url(./Fonts/poppins/Poppins-SemiBold.ttf);
+}
+
+/* Fonts end |\ */
+
+
+
+/* header start || */
+
+.login-div a, .header-bottom ul, .login-contact-div, .logo-name-menu, .logo-name, .header-top, .contact-icons {
+    display: flex;
+}
+
+.login-div a, .logo-name, .logo-name-menu, .header-top {
+    align-items: center;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    transition: opacity 0.5s;
+    z-index: 100;
+}
+
+.header-top {
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #ffffff;
+}
+
+.search-input {
+    border-bottom: 1px solid black;
+    width: fit-content;
+    padding: 0px 10px;
+}
+
+.search-input svg {
+    width: 14px;
+}
+
+.search-input input {
+    border: none;
+    padding: 8px 0px;
+    width: 70%;
+    background-color: transparent;
+}
+
+.logo-svg {
+    width: 56px;
+    height: 68px;
+}
+
+.logo-name {
+    gap: 20px;
+}
+
+.logo-name h1 {
+    font-size: 27px;
+    font-family: poppins-semibold, sans-serif;
+}
+
+.logo-name h2 {
+    font-size: 16px;
+    color: #1D1D36;
+    font-weight: 100;
+}
+
+.logo-name-menu {
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.burger-menu {
+    display: none;
+    padding: 2px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-menu span {
+    width: 30px;
+    height: 5px;
+    background-color: #1D1D36;
+}
+
+.login-contact-div {
+    gap: 30px;
+}
+
+.login-div a {
+    color: #1D1D36;
+}
+
+.contact-icons img {
+    width: 27px;
+    height: 27px;
+}
+
+.contact-icons, .login-div a {
+    gap: 10px;
+}
+
+.header-bottom {
+    background-color: #1D1D36;
+    padding: 8px 0px;
+}
+
+.header-bottom nav {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.header-bottom ul {
+    gap: 30px;
+}
+
+.header-bottom li a {
+    color: #ffffff;
+    padding: 3px 5px;
+}
+
+.header-bottom a:hover {
+    color: #A4A3E7;
+}
+
+
+/* header end |\ */
+
+
+
+/* footer start ||*/
+
+.footer-logo h2 {
+    color: #ffffff;
+    font-size: 27px;
+}
+
+.footer-logo h3, .footer-nav li a, .social-icon a, .contact-details p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.bottom-footer {
+    background-color: #ffffff;
+    padding: 20px 0px;
+}
+
+.bottom-footer p {
+    text-align: center;
+}
+
+.bottom-footer a {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.top-footer {
+    background-color: #1D1D36;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-logo a img {
+    width: 71px;
+}
+
+.footer-logo>a{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-nav div, .social-icon, .contact-details>div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-nav, .footer-social-icons, .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-nav h2, .footer-social-icons h2, .contact-details h2 {
+    color: #A4A3E7;
+    font-size: 16px;
+    animation: popup 1.5s;
+}
+
+.footer-nav nav, .social-icon, .contact-details div {
+    animation: popup 3s;
+}
+
+/* footer end |\ */
+
+
+
+
+/* header responsive start || */
+
+@media screen and (max-width: 1025px){
+    .burger-menu {
+        display: flex;
+    }
+
+    .login-contact-div {
+        display: none;
+    }
+
+    .header-bottom {
+        display: none;
+    }
+
+}
+
+@media  screen and (max-width:769px) {
+    .header-top {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .search-input, .logo-name-menu {
+        align-self: flex-start;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .logo-svg {
+        width: 40px;
+        height: auto;
+    }
+
+    .logo-name h1 {
+        font-size: 20px;
+    }
+
+    .logo-name h2 {
+        font-size: 13px;
+    }
+
+    .logo-name-menu {
+        gap: 10px;
+    }
+}
+
+/* header responsive end |\ */
+
+
+
+/* responsive footer start || */
+
+@media screen and (max-width:1025px) {
+    .top-footer {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-columns: 33vw;
+        row-gap: 40px;
+    }
+
+    .footer-logo {
+        grid-row: 1/2;
+        justify-self: unset;
+    }
+
+    .footer-nav, .contact-details, .footer-social-icons {
+        grid-row: 2/3;
+        justify-self: center;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .top-footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-columns: 50vw;
+    }
+
+    .footer-logo {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .footer-logo, .footer-nav {
+        grid-row: 1/2;
+    }
+
+    .footer-social-icons, .contact-details {
+        grid-row: 2/3;
+    }
+}
+
+@media screen and (max-width:541px) {
+    .top-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-nav ul div, .footer-social-icons div, .contact-details div {
+        align-items: center;
+    }
+
+    .contact-details h2 {
+        text-align: center;
+    }
+}
