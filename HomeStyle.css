@@ -8,6 +8,10 @@
     display: flex;
 }
 
+#home  {
+    color: #8180bd;
+}
+
 .section1-main {
     position: absolute;
     top: 15%;
