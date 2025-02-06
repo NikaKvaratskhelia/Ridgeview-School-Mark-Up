@@ -9,10 +9,10 @@ function removeStickyFunction() {
     if (window.innerWidth < 541) {
         if (window.scrollY > scrollThreshold) {
             header.classList.remove('visible');
-            header.style.opacity = '0';
+            header.style.position = 'static';
         } else {
             header.classList.add('visible');
-            header.style.opacity = '1';
+            header.style.position = 'sticky';
         }
     }
 }
