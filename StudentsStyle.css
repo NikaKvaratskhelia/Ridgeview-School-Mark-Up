@@ -1,0 +1,100 @@
+* {
+    font-family: poppins-semibold;
+}
+
+.main-name {
+    max-width: 450px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.main-name h2 {
+    font-size: 60px;
+}
+
+.main-name p {
+    line-height: 25px;
+}
+
+.main-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+.box2 {
+    background-image: url(./Images/sudents\ 1.avif);
+}
+
+.box3 {
+    background-image: url(./Images/students\ 2.avif);
+}
+
+.box2, .box3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box1 {
+    background-color: #5c5adb;
+}
+
+.box1, .box4 {
+    text-align: center;
+    display: flex;
+}
+
+.box {
+    padding: 30px;
+}
+
+.box1-content, .box4-content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 60%;
+    margin: auto;
+}
+
+.box1 p {
+    color: #ffffff;
+}
+
+
+.box1 h2, .box4 h2 {
+    font-size: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 50px 0px;
+}
+
+/* box responsive start */
+
+@media screen and (max-width: 801px) {
+    .main-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box4 {
+        grid-row: 3/4;
+    }
+
+    .box {
+        min-height: 500px;
+        height: 100%;
+        max-height: fit-content;
+    }
+
+    .main-name h2 {
+        font-size: 40px;
+    }
+}
