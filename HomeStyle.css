@@ -82,7 +82,7 @@
     animation: popup 1.5s;
 }
 
-.safety-measures>div {
+.safety-measures-name {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -106,9 +106,108 @@
     font-family: poppins semibold, sans-serif;
 }
 
-.safety-measures a {
+.safety-measures button {
     background-color: #5c5adb;
     padding: 10px 32px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.safety-measures button:hover, .text1 a:hover, .text2 a:hover {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.popup {
+    padding: 30px 0px;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 101;
+    background-color: #1d1d36;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.popup-name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+.popup-name svg {
+    cursor: pointer;
+    fill: white;
+}
+
+.popup h2 {
+    font-size: 40px;
+    color: #5c5adb;
+    font-weight: 100;
+}
+
+.popup form {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.checkbox-div {
+    display: flex;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.checkbox-div label {
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.popup input {
+    color: #ffffff;
+}
+
+.input4-popup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.input4-popup>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.popup form input {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    padding: 10px 15px;
+}
+
+.popup-question {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.popup-question .popup-question-p {
+    text-align: unset;
 }
 
 

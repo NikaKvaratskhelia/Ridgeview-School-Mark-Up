@@ -165,7 +165,7 @@
         <section class="section2">
             <div class="section2-top">
                 <div class="safety-measures animated">
-                    <div>
+                    <div class="safety-measures-name">
                         <h2>SAFETY MEASURES IN PLACE</h2>
                         <p>
                             We do everything to ensure the health, safety and well-being 
@@ -173,9 +173,114 @@
                             found here
                         </p>
 
-                        <a class="safety-hover" href="#">
+                        <button id="openPopup">
                             Safety Measures
-                        </a>
+                        </button>
+                    </div>
+
+                    <div id="popup" class="popup">
+
+                        <div class="popup-name">
+                            <h2>
+                                New Safety Regulations
+                            </h2>
+
+                            <svg
+                            id="closePopup"
+                            preserveAspectRatio="xMidYMid meet" 
+                            data-bbox="25.9 25.9 148.2 148.2" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="25.9 25.9 148.2 148.2" 
+                            role="presentation" 
+                            aria-hidden="true"
+                            width="20"
+                            height="20">
+                                <g>
+                                    <path d="M171.3 158.4L113 100l58.4-58.4c3.6-3.6 3.6-9.4 0-13s-9.4-3.6-13 0L100 87 41.6 28.7c-3.6-3.6-9.4-3.6-13 0s-3.6 9.4 0 13L87 100l-58.4 58.4c-3.6 3.6-3.6 9.4 0 13s9.4 3.6 13 0L100 113l58.4 58.4c3.6 3.6 9.4 3.6 13 0s3.5-9.5-.1-13z"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <form action="post">
+                            <div class="input4-popup">
+                                <div>
+                                    <label for="first-Name">First Name *</label>
+
+                                    <input type="text" name="first-Name" id="first-Name" required>
+                                </div>
+
+                                <div>
+                                    <label for="last-name">Last Name *</label>
+
+                                    <input type="text" name="last-name" id="last-name" required>
+                                </div>
+
+                                <div>
+                                    <label for="email">Email</label>
+
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+
+                                <div>
+                                    <label for="datepicker">Date Of birth *</label>
+
+                                    <input type="text" name="datepicker" id="datepicker" required>
+                                </div>
+                            </div>
+
+                            <div class="popup-question">
+                                <p class="popup-question-p">
+                                    Do you have a doctor's permit to participate in intense physical activities? *
+                                </p>
+
+                                <div>                                   
+                                    <input type="radio" name="doc" id="doc-yes" required="required1">
+                                    <label for="doc-yes">Yes</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="doc" id="doc-no" required="required1">
+                                    <label for="doc-no">No</label>
+                                </div>
+                            </div>
+
+                            <div class="popup-question">
+                                <p class="popup-question-p">
+                                    Have you lost your consciousness in the last past 12 months? *
+                                </p>
+
+                                <div>                                   
+                                    <input type="radio" name="mnth" id="mnth-yes" required="required">
+                                    <label for="mnth-yes">Yes</label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="mnth" id="mnth-no" required="required">
+                                    <label for="mnth-no">No</label>
+                                </div>
+                            </div>
+
+                            <div class="input4-popup">
+                                <div >
+                                    <label for="intials">Initials *</label>
+                                    <input type="text" name="initials" id="initials" >
+                                </div>
+
+                                <div>
+                                    <label for="date">Todays Date *</label>
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <div class="checkbox-div">
+                                <input type="checkbox" id="checkbox" name="checkbox" >
+                                <label for="checkbox">Have you lost your consciousness in the last past 12 months? *</label>
+                            </div>
+
+                            <button type="submit">
+                                Submit
+                            </button>
+                        </form>
                     </div>
                 </div>
 
@@ -478,6 +583,7 @@
 
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./script.js">
+    </script>
 </body>
 </html>
