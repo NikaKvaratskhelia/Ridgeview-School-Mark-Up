@@ -14,7 +14,7 @@
 
 .section1-main {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 7%;
     background-color: #5c5adb;
     height: 50%;
@@ -25,7 +25,6 @@
     align-items: center;
     justify-content: space-between;
     animation: fadeIn-afterHtml 2s;
-    animation-fill-mode: forwards;
 }
 
 .section1-main div {
@@ -128,12 +127,14 @@
     bottom: 0;
     left: 0;
     width: 50%;
+    min-height: 100vh;
     height: 100%;
     z-index: 101;
     background-color: #1d1d36;
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    overflow-y: auto;
 }
 
 .popup-name {
@@ -163,6 +164,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    gap: 20px;
 }
 
 .checkbox-div {
@@ -177,14 +179,11 @@
     cursor: pointer;
 }
 
-.popup input {
-    color: #ffffff;
-}
-
 .input4-popup {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    grid-auto-columns: 50%;
 }
 
 .input4-popup>div {
@@ -198,6 +197,7 @@
     background-color: transparent;
     border: 1px solid #ffffff;
     padding: 10px 15px;
+    color: #ffffff;
 }
 
 .popup-question {
@@ -714,3 +714,31 @@
 }
 
 /*  sign-up responsive end |\ */
+
+/* popup responsive start */
+
+@media screen and (max-width:1050px) {
+    .popup {
+        width: 70%;
+    }    
+}
+
+@media screen and (max-width:786px) {
+    .popup {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .popup form {
+        width: 90%;
+    }
+
+    .popup h2 {
+        font-size: 30px;
+    }
+
+    .input4-popup {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
