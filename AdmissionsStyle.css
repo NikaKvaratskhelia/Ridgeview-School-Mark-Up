@@ -1,0 +1,105 @@
+#Admissions, #Admissions1 {
+    color: #A4A3E7;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.main-name {
+    max-width: 450px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main-name h2 {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.main-box {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.box {
+    text-align: center;
+    height: 100vh;
+}
+
+.box1, .box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 p, .box2 p {
+    max-width: 350px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.box1 h2, .box2 h2 {
+    font-size: 30px;
+    max-width: 400px;
+}
+
+.box2 {
+    background-color: #1d1d36;
+}
+
+.box3 {
+    background-image: url(./Images/admission.avif);
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    width: 100%;
+    height: 100vh;
+}
+
+.box2 h2, .box2 h3 {
+    color: #5c5adb;
+}
+
+.box2 {
+    color: #ffffff;
+}
+
+.top-div, .bottom-div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bottom-div div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mail-p {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:800px) {
+    .main-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box3 {
+        grid-row: 2/3;
+    }
+
+    .main-name h2 {
+        font-size: 40px;
+    }
+}

@@ -26,25 +26,25 @@ function removeStickyFunction() {
  
 window.addEventListener("scroll", removeStickyFunction);
 
-// pop up
+// burger menu
 
-document.getElementById('openPopup').addEventListener('click', function() {
-  document.getElementById('popup').style.display = 'flex';
-  document.getElementById('popup').style.animation= 'popup2 1s'
+document.getElementById('burger-menu').addEventListener('click', function() {
+  document.getElementById('burger-menu-list').style.display = 'flex';
 });
 
 window.addEventListener('click', function(event) {
-  if (event.target == document.getElementById('popup')) {
-      document.getElementById('popup').style.display = 'none';
+  if (event.target == document.getElementById('burger-menu-list')) {
+      document.getElementById('burger-menu-list').style.display = 'none';
   }
 });
 
-document.getElementById('closePopup').addEventListener('click', function() {
-  document.getElementById('popup').style.display = 'none';
+
+document.getElementById('closeBurger-menu').addEventListener('click', function() {
+  document.getElementById('burger-menu-list').style.display = 'none';
 });
 
 window.addEventListener('click', function(event) {
-  if (event.target == document.getElementById('popup')) {
-      document.getElementById('popup').style.display = 'flex';
+  if (event.target == document.getElementById('burger-menu-list')) {
+      document.getElementById('burger-menu-list').style.display = 'flex';
   }
 });

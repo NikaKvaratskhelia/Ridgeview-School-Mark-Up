@@ -17,6 +17,10 @@ body {
     padding-top: 150px;
 }
 
+main {
+    margin-bottom: 50px;
+}
+
 /* Animations start || */
 
 @keyframes fade-in {
@@ -189,13 +193,6 @@ body {
     gap: 40px;
 }
 
-.burger-menu {
-    display: none;
-    padding: 2px;
-    flex-direction: column;
-    gap: 5px;
-}
-
 .burger-menu span {
     width: 30px;
     height: 5px;
@@ -241,6 +238,71 @@ body {
 
 .header-bottom a:hover {
     color: #A4A3E7;
+}
+
+.burger-menu {
+    display: none;
+    padding: 2px;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger-menu-list {
+    display: none;
+    width: 60%;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    padding: 20px;
+    flex-direction: column;
+    align-items: end;
+    gap: 30px;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.burger-menu-main-list {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.burger-menu-main-list>a {
+    color: #000000;
+}
+
+.burger-menu-main-list nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: end;
+}
+
+.burger-menu-main-list nav ul li a, .log-in-logo a {
+    color: #000000;
+}
+
+.burger-menu-main-list nav {
+    height: 100%;
+}
+
+.burger-menu-close {
+    align-self: flex-end;
+    justify-self: start;
+}
+
+.burger-menu-list .log-in-logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 
@@ -435,4 +497,11 @@ body {
     .contact-details h2 {
         text-align: center;
     }
+}
+
+@media screen and (max-width:310px) {
+    .contact-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }    
 }

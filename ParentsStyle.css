@@ -1,3 +1,7 @@
+#parents, #parents1 {
+    color: #A4A3E7;
+}
+
 .parents-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
