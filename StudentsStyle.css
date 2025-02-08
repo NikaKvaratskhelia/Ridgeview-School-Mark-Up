@@ -7,10 +7,16 @@
     width: 100%;
     margin: auto;
     text-align: center;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-name h2 {
     font-size: 60px;
+    font-family: poppins-semibold;
 }
 
 .main-name p {
@@ -74,7 +80,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 100px;
-    padding: 50px 0px;
 }
 
 /* box responsive start */

@@ -1,3 +1,187 @@
 #contact, #contact1 {
     color: #9aa0e7;
 }
+
+.contact-name {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-name h2 {
+    font-size: 40px;
+    font-family: poppins-semibold;
+}
+
+h2 {
+    font-family: poppins-semibold;
+}
+
+.time, .main-name {
+    color: #5556da;
+}
+
+.main-name {
+    font-size: 40px;
+}
+
+.box {
+    padding: 50px 0px;
+    color: #ffffff;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #1d1d36;
+}
+
+.box1>div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box1>div>p {
+    max-width: 220px;
+    margin: auto;
+}
+
+.main-box {
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box2 {
+    background-image: url(./Images/contact\ 1.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.email-p {
+    text-decoration: underline;
+}
+
+.box4 {
+    background-color: #1d1d36;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box4 h2 {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.box3>div {
+    margin: auto;
+}
+
+form {
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+form button {
+    background-color: #5c5adb;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+form>div {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+form>div>div {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input {
+    padding: 12px 18px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+}
+
+.form-bottom {
+    flex-direction: column;
+}
+
+.form-bottom textarea {
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:1000px) {
+    .main-box {
+        grid-template-columns: 1fr;
+    }
+
+    .box2 {
+        height: 100vh;
+    }
+
+    .box4 form>div {
+        flex-direction: column;
+    }
+
+    .box4 h2 {
+        font-size: 30px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .box4 {
+        grid-row: 3/4;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .box4 form>div {
+        flex-direction: column;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .contact-name {
+        max-width: 80%;
+    }
+}
