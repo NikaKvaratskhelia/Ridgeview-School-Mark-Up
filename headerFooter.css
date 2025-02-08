@@ -203,7 +203,7 @@ main {
     gap: 30px;
 }
 
-.login-div a {
+.login-demo-button a {
     color: #1D1D36;
 }
 
@@ -212,7 +212,7 @@ main {
     height: 27px;
 }
 
-.contact-icons, .login-div a {
+.contact-icons, .login-demo-button a {
     gap: 10px;
 }
 
@@ -262,6 +262,65 @@ main {
     align-items: end;
     gap: 30px;
     box-shadow: 10px 10px 10px #000000;
+}
+
+.login-demo-close {
+    cursor: pointer;
+}
+
+.login-demo-button {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.login-demo {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    display: none;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-demo-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.login-demo-close-ok {
+    padding: 10px 50px;
+    background-color: #5c5adb;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+}
+
+.main-div-login .login-name {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login-name h2 {
+    font-size: 40px;
+}
+
+.main-div-login {
+    width: fit-content;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
 }
 
 .burger-menu-main-list {
