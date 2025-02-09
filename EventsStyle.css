@@ -1,0 +1,136 @@
+#events {
+    color: #a4a3e7;
+}
+
+section {
+    background: linear-gradient(to bottom, #1D1D36 0%, #1D1D36 500px, #fff 500px, #fff 100%);
+    padding-top: 50px;
+}
+
+
+main>h2 {
+    font-family: poppins-semibold;
+    font-size: 75px;
+    color: #1D1D36;
+    width: fit-content;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+.main-div {
+    width: 90%;
+    margin: auto;
+    background-color: #ffffff;
+    border: #000000 1px solid;
+    border-bottom: none;
+}
+
+.event {
+    padding: 30px;
+    border-bottom: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.event-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    display: none;
+    align-self: flex-end;
+}
+
+.arrow img {
+    width: 40px;
+    cursor: pointer;
+}
+
+.event:hover .event-left-row {
+    display: none;
+}
+
+.event:hover .arrow {
+    display: unset;
+}
+
+.event-left {
+    display: flex;
+    gap: 20px;
+}
+
+.event-left-row {
+    display: flex;
+    align-self: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+
+.event-left-row h3 {
+    color: #1d1d36;
+    font-size: 13px;
+    align-self: flex-end;
+}
+
+.event-left-column h2, .event-left-row span {
+    color: #5d5bdb;
+    font-size: 40px;
+    font-family: poppins-semibold;
+}
+
+.event-left-column p {
+    color: #5d5bdb;
+}
+
+.event a {
+    background-color: #5d5bdb;
+    padding: 8px 12px;
+    color: #ffffff;
+}
+
+.event a:hover {
+    opacity: 0.8;
+}
+
+.event-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    display: none;
+}
+
+.event-bottom-share {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.event-bottom-share svg {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width:950px) {
+    .event-top {
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .event-left {
+        flex-direction: column;
+    }
+
+    .event-left-row {
+        align-self: flex-start;
+    }
+
+    main>h2 {
+        font-size: 40px;
+    }
+}
