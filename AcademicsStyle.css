@@ -1,11 +1,17 @@
-.section1 .main-box .box .box-txt a {
+.box-txt a {
   background-color: #5c5adb;
   color: #ffffff;
   padding: 12px 20px;
   cursor: pointer;
-  width: -moz-fit-content;
   width: fit-content;
   justify-self: flex-end;
+}
+
+.box-txt a:hover {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  color: #000000;
+  transition: 0.5s;
 }
 
 #academics {

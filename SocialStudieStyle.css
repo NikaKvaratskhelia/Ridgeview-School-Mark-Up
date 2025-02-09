@@ -1,0 +1,94 @@
+main>h2 {
+    font-size: 70px;
+    max-width: fit-content;
+    margin: auto;
+    font-family: poppins-semibold;
+    margin-top: 30px;
+}
+
+.photo-main-div {
+    padding: 70px 0px;
+    background: linear-gradient(to bottom, #5c5adb 0%, #5c5adb 70%, #ffffff 70%, #ffffff 100%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.photo {
+    background-image: url(./Images/social\ studies.avif);
+}
+
+.photo1 {
+    background-image: url(./Images/science.avif);
+}
+
+.photo2 {
+    background-image: url(./Images/math.avif);
+}
+
+.photo3 {
+    background-image: url(./Images/literature.avif); 
+}
+
+.photo4 {
+    background-image: url(./Images/art.avif);
+}
+
+.photo5 {
+    background-image: url(./Images/pool.avif);
+}
+
+.photo-div {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 65%;
+    height: 70vh;
+    margin: auto;
+}
+
+.text-div {
+    max-width: fit-content;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.text-div p {
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+}
+
+.text-div a {
+    background-color: #5c5adb;
+    color: #ffffff;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: fit-content;
+    margin: auto;
+}
+  
+.text-div a:hover {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:950px) {
+    .photo-div {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:560px) {
+    main>h2 {
+        font-size: 40px;
+    }
+}
