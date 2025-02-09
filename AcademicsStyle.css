@@ -1,0 +1,160 @@
+.section1 .main-box .box .box-txt a {
+  background-color: #5c5adb;
+  color: #ffffff;
+  padding: 12px 20px;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-self: flex-end;
+}
+
+#academics {
+  color: #9aa0e7;
+}
+
+.main-name {
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.main-name h2 {
+  padding-top: 30px;
+  font-size: 70px;
+  font-family: poppins-semibold;
+}
+
+.main-name p {
+  max-width: 500px;
+  margin: auto;
+}
+
+.section1 {
+  margin-top: 100px;
+  background: linear-gradient(to bottom, #5c5adb 0%, #5c5adb 50%, #ffffff 50%, #ffffff 100%);
+  padding: 50px;
+}
+
+.main-box {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.box {
+  display: flex;
+  height: 50vh;
+}
+
+.box-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  width: 50%;
+}
+
+.box-txt p {
+  max-width: 200px;
+}
+
+.box-img {
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box1 .box-img {
+  background-image: url(./Images/admiss\ 1.avif);
+}
+
+.box2 .box-img {
+  background-image: url(./Images/admiss\ 2.avif);
+}
+
+.box3 .box-img {
+  background-image: url(./Images/admiss\ 3.avif);
+}
+
+.box4 .box-img {
+  background-image: url(./Images/admiss\ 4.avif);
+}
+
+.box5 .box-img {
+  background-image: url(./Images/admiss\ 5.avif);
+}
+
+.box6 .box-img {
+  background-image: url(./Images/admiss\ 6.avif);
+}
+
+.box1, .box2, .box5, .box6 {
+  background-color: white;
+  color: #000000;
+}
+
+.box3, .box4 {
+  color: #ffffff;
+  background-color: #1d1d36;
+}
+
+@media screen and (max-width:1050px) {
+  .main-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .box2, .box3, .box5, .box6, .box4 {
+    flex-direction: row-reverse;
+  }
+
+  .box4 {
+    grid-row: 5/6;
+  }
+
+  .box-txt p, .box-txt h3, .box-txt a {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:771px) {
+  .section1 .main-box {
+    width: 100%;
+  }
+
+  .section1 {
+    padding: 50px 0px;
+  }
+
+}
+
+@media screen and (max-width:450px) {
+  .main-name h2 {
+    font-size: 30px;
+  }
+  
+  .box {
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .box-img, .box-txt {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .box-txt {
+    margin: auto;
+  }
+
+  .box3, .box4 {
+    flex-direction: column-reverse;
+  }
+}
