@@ -105,7 +105,7 @@ main h3 {
     display: none;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    padding: 50px 0px;
 }
 
 .form-div-main {
@@ -166,6 +166,7 @@ button {
     align-items: center;
     justify-content: center;
     display: none;
+    text-align: center;
 }
 
 .registered-div h2 {
@@ -181,3 +182,25 @@ button {
     color: #ffffff;
 }
 
+@media screen and (max-width:400px) {
+    .blue-bg h2 {
+        font-size: 50px;
+    }
+    
+}
+
+@media screen and (max-width:700px) {
+    .form-div-main {
+        flex-direction: column-reverse;
+    }    
+}
+
+@media screen and (max-width:420px) {
+    .form-div-main {
+        max-width: 90%;
+    }
+
+    form>div {
+        flex-direction: column;
+    }
+}
