@@ -1,0 +1,183 @@
+main {
+    color: #5c5adb;
+    flex-direction: column;
+}
+
+.blue-bg {
+    background-color: #eeeefb;
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.blue-bg-main {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.blue-bg-main h2 {
+    font-size: 60px;
+}
+
+.blue-bg-main-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.blue-bg-main-txt p {
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+}
+
+main h3, main h2 {
+    font-family: poppins-semibold;
+}
+
+main h3 {
+    font-size: 34px;
+}
+
+.button-rsvp {
+    background-color: #5c5adb;
+    padding: 12px 50px;
+    width: fit-content;
+    color: #ffffff;
+    font-family: poppins-semibold;
+    margin: auto;
+    cursor: pointer;
+}
+
+.button-rsvp:hover {
+    opacity: 0.8;
+}
+
+.white-bg {
+    padding: 50px 0px;
+}
+
+.fourth-div>div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+}
+
+.white-bg>div {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.second-div p {
+    max-width: 600px;
+    margin: auto;
+}
+
+.first-div, .second-div {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.third-div, .fourth-div {
+    margin: auto;
+}
+
+.fourth-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-div {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.form-div-main {
+    max-width: fit-content;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.top-input {
+    display: flex;
+    gap: 20px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background-color: #5c5adb;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    color: #ffffff;
+    font-family: poppins-semibold;
+    cursor: pointer;
+}
+
+.form-div input {
+    padding: 12px;
+}
+
+.form-div-details-main {
+    border: black solid 1px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.back-to-site {
+    text-decoration: underline;
+    color: #000000;
+}
+
+.registered-div {
+    padding: 50px 0px;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.registered-div h2 {
+    font-size: 60px;
+    font-family: poppins-semibold;
+}
+
+.calendar {
+    background-color: #5c5adb;
+    padding: 12px;
+    width: 200px;
+    text-align: center;
+    color: #ffffff;
+}
+
