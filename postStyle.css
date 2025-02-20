@@ -229,6 +229,10 @@
     padding: 10px;
 }
 
+.login-demo-button p {
+    width: 50px;
+}
+
 @media screen and (max-width:630px) {
     .second-post, .first-post, .third-post {
         width: 45%;
@@ -239,10 +243,22 @@
         flex-wrap: wrap;
     }
 
+    .posts-top {
+        margin: auto;
+        max-width: 90vw;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width:400px) {
     .first-post, .second-post, .third-post {
         width: 90%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .main-div {
+        padding: 50px 20px;
     }
 }
