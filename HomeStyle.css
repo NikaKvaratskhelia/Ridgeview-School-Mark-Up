@@ -264,8 +264,6 @@
     flex-direction: column;
     gap: 40px;
     align-items: center;
-    position: relative;
-    top: -150px;
 }
 
 .new-posts>a {
@@ -286,6 +284,8 @@
     gap: 40px;
     flex-wrap: wrap;
     align-self: center;
+    justify-content: center; 
+    width: 90%;
 }
 
 .new-post {
@@ -360,14 +360,10 @@
 }
 
 .purple-bg {
-    background-color: #5c5adb;
-    width: 100vw;
-    max-height: fit-content;
-    height: 100%;
+    background: linear-gradient(to bottom, white 0%, white 15%,  hsl(241, 64%, 61%) 15%, hsl(241, 64%, 61%) 90%, white 90%, white 100%);
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 0px 0px 40px 0px;
 }
 
 
@@ -476,21 +472,6 @@
 
 /* section 2 end |\ */
 
-
-/* section 1 respomsvie start || */
-
-@media screen and (max-width:1025px) {
-    
-    .section1 {
-        justify-content: space-evenly;
-    }
-
-    .section1-main {
-        position: unset;
-        align-self: center;
-    }
-}
-
 @media screen and (max-width:650px) {
     .section1-main h2 {
         font-size: 50px;
@@ -502,6 +483,10 @@
 
     .section1-main a {
         font-size: 14px;
+    }
+
+    .posts-main-div a>div {
+        width: 80%;
     }
 }
 
@@ -522,10 +507,6 @@
         font-size: 10px;
     }
 }
-
-/* section 1 responsive end |\ */
-
-/* section 2 responsive start || */
 
 @media screen and (max-width: 1025px) {
     .grid-square {
@@ -563,6 +544,15 @@
 
     .text1 p, .text2 p {
         width: 70%;
+    }
+
+    .section1 {
+        justify-content: space-evenly;
+    }
+
+    .section1-main {
+        position: unset;
+        align-self: center;
     }
 }
 
@@ -632,14 +622,8 @@
     }
 }
 
-/* section 2 responsive end |\ */
-
-/* new posts responsive start || */
-
 @media screen and (max-width:769px) {
     .posts-main-div {
-        max-width: 90%;
-        margin: auto;
         flex-direction: column;
     }
 
@@ -648,21 +632,10 @@
         height: 250px;
     }
 
-    .new-posts {
-        top: -20%;
-    }
-
     .new-posts h2 {
         font-size: 40px;
     }
 
-}
-
-/* new posts reposnive end |\ */
-
-/* gallery responsive start || */
-
-@media screen and (max-width:769px) {
     .gallery-name h2 {
         font-size: 40px;
     }
@@ -674,11 +647,8 @@
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
-
-/* gallery reponsive end |\ */
-
-/* sign-up responsive start || */
 
 @media screen and (max-width:671px) {
     .sign-up-form-bottom {
@@ -712,10 +682,6 @@
         width: 90%;
     }
 }
-
-/*  sign-up responsive end |\ */
-
-/* popup responsive start */
 
 @media screen and (max-width:1050px) {
     .popup {
