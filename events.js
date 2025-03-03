@@ -30,17 +30,6 @@ document.getElementById('event-bottom1').addEventListener('click', function() {
 });
 
 
-
-document.querySelector('.event').addEventListener('mouseenter', function() {
-  document.querySelector('.event-left-row').style.display = 'none';
-  document.querySelector('.arrow').style.display = 'flex';
-});
-
-document.querySelector('.event').addEventListener('mouseleave', function() {
-  document.querySelector('.event-left-row').style.display = 'flex';
-  document.querySelector('.arrow').style.display = 'none';
-});
-
 document.getElementById('arrow2').addEventListener('click', function() {
   document.getElementById('event-bottom2').style.display = 'flex';
   document.getElementById('arrow2').style.transform = 'rotate(180deg)';
@@ -57,18 +46,6 @@ document.getElementById('event-bottom2').addEventListener('click', function() {
   document.getElementById('arrow2').style.transform = 'unset';
 });
 
-
-
-
-document.querySelector('.event').addEventListener('mouseenter', function() {
-  document.querySelector('.event-left-row').style.display = 'none';
-  document.querySelector('.arrow').style.display = 'flex';
-});
-
-document.querySelector('.event').addEventListener('mouseleave', function() {
-  document.querySelector('.event-left-row').style.display = 'flex';
-  document.querySelector('.arrow').style.display = 'none';
-});
 
 document.getElementById('arrow3').addEventListener('click', function() {
   document.getElementById('event-bottom3').style.display = 'flex';
@@ -88,16 +65,6 @@ document.getElementById('event-bottom3').addEventListener('click', function() {
 
 
 
-document.querySelector('.event').addEventListener('mouseenter', function() {
-  document.querySelector('.event-left-row').style.display = 'none';
-  document.querySelector('.arrow').style.display = 'flex';
-});
-
-document.querySelector('.event').addEventListener('mouseleave', function() {
-  document.querySelector('.event-left-row').style.display = 'flex';
-  document.querySelector('.arrow').style.display = 'none';
-});
-
 document.getElementById('arrow4').addEventListener('click', function() {
   document.getElementById('event-bottom4').style.display = 'flex';
   document.getElementById('arrow4').style.transform = 'rotate(180deg)';
@@ -112,17 +79,6 @@ window.addEventListener('click', function(event) {
 document.getElementById('event-bottom4').addEventListener('click', function() {
   document.getElementById('event-bottom4').style.display = 'none';
   document.getElementById('arrow4').style.transform = 'unset';
-});
-
-
-document.querySelector('.event').addEventListener('mouseenter', function() {
-  document.querySelector('.event-left-row').style.display = 'none';
-  document.querySelector('.arrow').style.display = 'flex';
-});
-
-document.querySelector('.event').addEventListener('mouseleave', function() {
-  document.querySelector('.event-left-row').style.display = 'flex';
-  document.querySelector('.arrow').style.display = 'none';
 });
 
 document.getElementById('arrow5').addEventListener('click', function() {
