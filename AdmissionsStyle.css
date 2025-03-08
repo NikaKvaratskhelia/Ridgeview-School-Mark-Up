@@ -102,4 +102,8 @@ main {
     .main-name h2 {
         font-size: 40px;
     }
+
+    .box1 {
+        height: fit-content;
+    }
 }
