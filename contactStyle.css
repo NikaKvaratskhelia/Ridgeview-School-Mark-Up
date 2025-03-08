@@ -185,3 +185,9 @@ form button:hover {
         max-width: 80%;
     }
 }
+
+@media screen  and (max-width:570px) {
+    .box3 {
+        display: none;
+    }
+}

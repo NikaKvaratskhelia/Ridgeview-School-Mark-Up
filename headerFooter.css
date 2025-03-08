@@ -254,7 +254,7 @@ label {
 
 .burger-menu-list {
     display: none;
-    width: 60%;
+    width: fit-content;
     height: 100vh;
     background-color: #ffffff;
     position: fixed;

@@ -84,10 +84,11 @@ main {
 
 .parents-name p {
     max-width: 500px;
-    width: 100%;
+    width: 90%;
 }
 
 .parents-name h2 {
+    margin-top: 50px;
     font-size: 75px;
     font-family: poppins-semibold;
 }
